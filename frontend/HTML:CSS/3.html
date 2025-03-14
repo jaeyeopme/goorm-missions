@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled Buttons</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f8ff;
+      }
+
+      button {
+        padding: 12px 24px;
+        border: 1px solid #00aaff;
+        border-radius: 30px;
+        font-size: 20px;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      button:hover {
+        cursor: pointer;
+        transform: translateY(-3px);
+        opacity: 0.5;
+      }
+
+      .button-container {
+        display: flex;
+        gap: 10px;
+      }
+
+      .confirm {
+        background-color: #00aaff;
+        color: white;
+      }
+
+      .cancel {
+        background-color: white;
+        color: #00aaff;
+      }
+
+      .cancel:hover {
+        background-color: #00aaff;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-container">
+      <button class="confirm">확인</button>
+      <button class="cancel">취소</button>
+    </div>
+  </body>
+</html>
